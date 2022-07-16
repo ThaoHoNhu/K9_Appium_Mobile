@@ -13,7 +13,7 @@ public class Lesson_14 {
         //
         AppiumDriver<MobileElement> appiumDriver =  null;
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("PlatformName", "Android");
+        desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("automationName", "uiautomator2");
         desiredCapabilities.setCapability("udid", "2a5c6ce504057ece");
         desiredCapabilities.setCapability("appPackage", "com.wdiodemoapp");
