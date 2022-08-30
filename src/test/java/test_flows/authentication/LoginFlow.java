@@ -6,6 +6,7 @@ import models.components.login.LoginFormComponent;
 import models.pages.LoginScreen;
 import org.apache.commons.validator.routines.EmailValidator;
 import test_flows.BaseFlow;
+import org.testng.Assert;
 
 public class LoginFlow extends BaseFlow {
 
@@ -56,27 +57,19 @@ public class LoginFlow extends BaseFlow {
     private void verifyCorrectLoginCreds(LoginFormComponent loginFormComp) {
         String actualLoginSuccessStr = loginFormComp.getValidLoginStr();
         String expectedLoginSuccessStr = "Success";
-
-        System.out.println("actualLoginSuccessStr: " + actualLoginSuccessStr);
-        System.out.println("expectedLoginSuccessStr: " + expectedLoginSuccessStr);
-
-
+        Assert.assertEquals(actualLoginSuccessStr, expectedLoginSuccessStr, "[ERR] Login faild");
     }
 
     private void verifyIncorrectEmail(LoginFormComponent loginFormComp) {
         String actualInvalidEmailStr = loginFormComp.getInvalidEmailStr();
         String expectedInvalidEmailStr = "Please enter a valid email address";
-
-        System.out.println("actualInvalidEmailStr: " + actualInvalidEmailStr);
-        System.out.println("expectedInvalidEmailStr: " + expectedInvalidEmailStr);
+        Assert.assertEquals(actualInvalidEmailStr, expectedInvalidEmailStr, "[ERR] Invalid email str is not correct");
     }
 
     private void verifyIncorrectPassword(LoginFormComponent loginFormComp) {
         String actualInvalidPasswordStr = loginFormComp.getInvalidPasswordStr();
         String expectedInvalidPasswordStr = "Please enter at least 8 characters";
-
-        System.out.println("actualInvalidPasswordStr: " + actualInvalidPasswordStr);
-        System.out.println("expectedInvalidPasswordStr: " + expectedInvalidPasswordStr);
+        Assert.assertEquals(actualInvalidPasswordStr, expectedInvalidPasswordStr, "[ERR] Invalid password str is not correct");
     }
 
 }
