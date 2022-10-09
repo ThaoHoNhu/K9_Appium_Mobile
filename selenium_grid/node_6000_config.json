@@ -1,0 +1,25 @@
+{
+  "capabilities": [
+    {
+      "version": "12",
+      "maxInstances": 1,
+      "platform": "ANDROID",
+      "deviceName": "Samsung A31",
+      "udid": "2a5c6ce504057ece"
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url": "http://192.168.2.11:6000/wd/hub",
+    "host": "192.168.2.11",
+    "port": 6000,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubHost": "192.168.2.11",
+    "hubPort": 4444,
+    "hubProtocol": "http"
+  }
+}
