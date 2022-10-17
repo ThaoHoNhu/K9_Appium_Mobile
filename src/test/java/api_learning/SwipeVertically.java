@@ -20,7 +20,7 @@ public class SwipeVertically {
     //implicit wait, explicit wait
     public static void main(String[] args) {
 
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
+        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
 
         try {
             //Navigate Forms screen

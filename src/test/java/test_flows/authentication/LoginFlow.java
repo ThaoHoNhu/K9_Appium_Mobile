@@ -42,8 +42,11 @@ public class LoginFlow extends BaseFlow {
         boolean isEmailValid = EmailValidator.getInstance().isValid(username);
         boolean isPasswordValid = password.length() >=8;
 
-        if(isEmailValid && isPasswordValid){
+        /*if(isEmailValid && isPasswordValid){
             verifyCorrectLoginCreds(loginFormComp);
+        }*/
+        if(isEmailValid && isPasswordValid){
+            verifyCorrectLoginCreds();
         }
 
         if(!isEmailValid){
@@ -55,11 +58,17 @@ public class LoginFlow extends BaseFlow {
         }
     }
 
-    @Step("Verify login with correct creds")
+    /*@Step("Verify login with correct creds")
     private void verifyCorrectLoginCreds(LoginFormComponent loginFormComp) {
         String actualLoginSuccessStr = loginFormComp.getValidLoginStr();
         String expectedLoginSuccessStr = "Success";
         Assert.assertEquals(actualLoginSuccessStr, expectedLoginSuccessStr, "[ERR] Login faild");
+    }*/
+
+    // TODO: Homework
+    @Step("Verify login with correct creds")
+    private void verifyCorrectLoginCreds() {
+        System.out.println("Verifying correct login creds");
     }
 
     @Step("Verify login with incorrect email")

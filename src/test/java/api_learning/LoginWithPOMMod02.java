@@ -4,13 +4,12 @@ import driver.DriverFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
-import models.pages.LoginScreenMod01;
 import models.pages.LoginScreenMod02;
 import platform.Platform;
 
 public class LoginWithPOMMod02 {
     public static void main(String[] args) {
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
+        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
 
         try {
             // Navigate to Login screen

@@ -1,6 +1,6 @@
 {
   "host": "192.168.2.11",
-  "port": 4444,
+  "port": 4445,
   "newSessionWaitTimeout": -1,
   "servlets": [],
   "withoutServlets": [],

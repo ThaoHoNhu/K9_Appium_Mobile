@@ -4,9 +4,6 @@ import driver.DriverFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.testng.annotations.Test;
-import models.components.global.BottomNavComponent;
-import models.components.login.LoginFormComponent;
-import models.pages.LoginScreen;
 import platform.Platform;
 import test_flows.authentication.LoginFlow;
 import java.util.*;
@@ -15,7 +12,7 @@ public class LoginTest {
 
     @Test
     public void testLogin() {
-        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.ANDROID);
+        AppiumDriver<MobileElement> appiumDriver = DriverFactory.getDriver(Platform.android);
         List<LoginCred> loginCreds = new ArrayList<>();
         loginCreds.add(new LoginCred("teo@", "12345678"));
         loginCreds.add(new LoginCred("teo@sth.com", "1234567"));
