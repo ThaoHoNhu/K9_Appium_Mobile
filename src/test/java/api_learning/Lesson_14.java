@@ -15,7 +15,7 @@ public class Lesson_14 {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("automationName", "uiautomator2");
-        desiredCapabilities.setCapability("udid", "2a5c6ce504057ece");
+        desiredCapabilities.setCapability("udid", "192.168.56.101:5555");
         desiredCapabilities.setCapability("appPackage", "com.wdiodemoapp");
         desiredCapabilities.setCapability("appActivity", "com.wdiodemoapp.MainActivity");
 
