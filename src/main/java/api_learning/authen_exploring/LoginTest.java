@@ -1,4 +1,4 @@
-package tests.authen;
+package api_learning.authen_exploring;
 
 import driver.DriverFactory;
 import io.appium.java_client.AppiumDriver;
@@ -6,7 +6,9 @@ import io.appium.java_client.MobileElement;
 import org.testng.annotations.Test;
 import platform.Platform;
 import test_flows.authentication.LoginFlow;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginTest {
 

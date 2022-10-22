@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Regression]" parallel="tests">
+  <test thread-count="10" name="2a5c6ce504057ece(failed)" parallel="tests">
+    <parameter name="platformVersion" value="15.0"/>
+    <parameter name="udid" value="2a5c6ce504057ece"/>
+    <parameter name="platformName" value="android"/>
+    <parameter name="systemPort" value="8923"/>
+    <classes>
+      <class name="tests.form.FormTest">
+        <methods>
+          <include name="initAppiumSession"/>
+          <include name="captureScreenshot"/>
+          <include name="testFormInput"/>
+          <include name="quitAppiumSession"/>
+        </methods>
+      </class> <!-- tests.form.FormTest -->
+    </classes>
+  </test> <!-- 2a5c6ce504057ece(failed) -->
+  <test thread-count="10" name="192.168.56.101:5555(failed)" parallel="tests">
+    <parameter name="platformVersion" value="15.0"/>
+    <parameter name="udid" value="192.168.56.101:5555"/>
+    <parameter name="platformName" value="android"/>
+    <parameter name="systemPort" value="9001"/>
+    <classes>
+      <class name="tests.authen.LoginTestWithBaseTest">
+        <methods>
+          <include name="initAppiumSession"/>
+          <include name="captureScreenshot"/>
+          <include name="quitAppiumSession"/>
+          <include name="testLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.authen.LoginTestWithBaseTest -->
+    </classes>
+  </test> <!-- 192.168.56.101:5555(failed) -->
+</suite> <!-- Failed suite [Regression] -->

@@ -1,4 +1,4 @@
-package tests.testng;
+package api_learning.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.*;

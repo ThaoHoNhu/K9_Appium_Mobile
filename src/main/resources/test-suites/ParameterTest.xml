@@ -5,14 +5,14 @@
         <parameter name="udid" value="192.168.56.101:5555"/>
         <parameter name="systemPort" value="8300"/>
         <classes>
-            <class name="tests.testng.TestParameter" />
+            <class name="api_learning.testng.TestParameter" />
         </classes>
     </test>
     <test name="Buying Computer" >
         <parameter name="udid" value="2a5c6ce504057ece"/>
         <parameter name="systemPort" value="8400"/>
         <classes>
-            <class name="tests.testng.TestParameter02" />
+            <class name="api_learning.testng.TestParameter02" />
         </classes>
     </test>
 </suite>

@@ -7,7 +7,7 @@
         <parameter name="platformName" value="android"/>
         <parameter name="systemPort" value="8558"/>
         <classes>
-            <class name="tests.testng.TestNGHooks01"/>
+            <class name="api_learning.testng.TestNGHooks01"/>
             <class name="tests.authen.LoginTestWithDataBuilder"/>
             <class name="tests.authen.LoginTestWithDataProvider"/>
             <class name="tests.authen.LoginTest"/>
@@ -21,10 +21,10 @@
         <parameter name="systemPort" value="9145"/>
         <classes>
             <class name="tests.form.FormTest"/>
-            <class name="tests.parallel.Login"/>
-            <class name="tests.testng.BaseTestNG"/>
-            <class name="tests.testng.TestParameter02"/>
-            <class name="tests.testng.TestParameter"/>
+            <class name="api_learning.parallel.Login"/>
+            <class name="api_learning.testng.BaseTestNG"/>
+            <class name="api_learning.testng.TestParameter02"/>
+            <class name="api_learning.testng.TestParameter"/>
         </classes>
     </test> <!-- 2a5c6ce504057ece -->
 </suite> <!-- Regression -->

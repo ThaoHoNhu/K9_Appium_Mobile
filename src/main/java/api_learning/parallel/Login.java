@@ -1,4 +1,4 @@
-package tests.parallel;
+package api_learning.parallel;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.TmsLink;
